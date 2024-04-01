@@ -1,0 +1,80 @@
+
+@font-face {
+    font-family: Cinzel;
+    src: url('../Fonts/Cinzel-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: Lato;
+    src: url('../Fonts/Lato-Regular.ttf');
+}
+@font-face {
+    font-family: Kanit;
+    src: url('../Fonts/Kanit-Regular.ttf');
+}
+.hhi{
+    font-family: Kanit;
+}
+.t{
+    font-family: Kanit;
+}
+
+
+.typo{
+    font-family: Cinzel;
+}
+.font-loader{
+    font-family: Lato;
+}
+.dd{
+    font-family: Cinzel;
+}
+.dd{
+    font-family: Lato;
+}
+.cd{
+    width:25vw;
+    height:23vh;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+   
+}
+.cd:hover{
+    transform: scale(1.1);
+}
+body {
+    background: "#384f3c";
+  }
+  .M{
+    font-family: Lato;
+  }
+/* Add this CSS to your Home.css */
+.moving-cards-container {
+    display: flex;
+    overflow: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+  }
+  
+  .moving-card {
+    width: 350px;
+    margin-right: 20px;
+    transition: all 0.3s;
+    transform: scale(0.95);
+  }
+  
+  .moving-card:hover {
+    transform: scale(1);
+  }
+  
+  .card {
+    width: 100%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  

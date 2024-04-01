@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Sedgwick Ave Display;
+    src: url('../Fonts/SedgwickAveDisplay-Regular.ttf');
+}
+
+.Logo{
+    font-family: Sedgwick Ave Display;
+}

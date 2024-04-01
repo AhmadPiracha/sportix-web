@@ -1,0 +1,36 @@
+.card{
+    width:20vw;
+    height:20vh;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+   
+}
+.card:hover{
+    transform: scale(1.1);
+}
+body {
+    background: "#384f3c";
+  }
+.cd{
+    width:25vw;
+    height:23vh;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+   
+}
+.cd:hover{
+    transform: scale(1.1);
+}
+body {
+    background: "#384f3c";
+  }
+  .M{
+    font-family: Lato;
+  }
+
+
+

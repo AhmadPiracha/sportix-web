@@ -1,0 +1,40 @@
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown button style */
+  .dropdown-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Dropdown list style */
+  .dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  /* Dropdown list item style */
+  .dropdown-list li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Dropdown list item hover effect */
+  .dropdown-list li:hover {
+    background-color: #f2f2f2;
+  }
+  

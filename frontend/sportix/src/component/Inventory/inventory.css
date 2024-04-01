@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Mukta;
+    src: url('./Mukta-Bold.ttf');
+}
+@font-face {
+    font-family: Cinzel;
+    src: url('../Fonts/Cinzel-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: Lato;
+    src: url('../Fonts/Lato-Regular.ttf');
+}
+@font-face {
+    font-family: Kanit;
+    src: url('../Fonts/Kanit-Regular.ttf');
+}
+@font-face {
+    font-family: Sedgwick Ave Display;
+    src: url('../Fonts/SedgwickAveDisplay-Regular.ttf');
+}
+
+.cd{
+    width:25vw;
+    height:23vh;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+   
+}
+.cd:hover{
+    transform: scale(1.1);
+}
+body {
+    background: "#384f3c";
+  }
+  .M{
+    font-family: Lato;
+  }
+
+.CContainer {
+    background-color: #88cd4c;
+opacity: 0.8;
+background-image:  linear-gradient(#444cf7 1px, transparent 1px), linear-gradient(to right, #444cf7 1px, #88cd4c 1px);
+background-size: 20px 20px;
+background-position: 0 0,10px 10px}
+
+

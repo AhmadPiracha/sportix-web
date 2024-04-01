@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Modal Button */
+ 
+  
+  
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Increase the z-index to make sure it's above other elements */
+  }
+  
+  
+  .modalContainer {
+    max-width: 600px;
+    width: 100%;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+  }
+  
+  img {
+    width: 250px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .modalRight {
+    width: 100%;
+  }
+  
+  .closeBtn {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+  }
+  
+  .btnContainer {
+    display: flex;
+    padding: 1rem 1rem;
+  }
+  .btnContainer button {
+    width: 100%;
+    margin: .5rem;
+    padding: 16px 0;
+    /* border: none; */
+    border: 1px solid #411b57;
+    /* color: #ffffff; */
+  }
+  
+  .btnPrimary {
+    background-color: #411b57;
+    color: white;
+  }
+  
+  .btnOutline {
+    /* background-color: #a76a99; */
+    background-color: white;
+    color: #411b57;
+  }
+  
+  .bold {
+    font-weight: 600;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .modalContainer {
+      flex-direction: column;
+      top: 0;
+      left: 0;
+      transform: none;
+      width: 100%;
+      height: 100vh;
+    }
+    img {
+      width: 100%;
+      max-height: 70vh;
+      object-fit: cover;
+    }
+  
+    .heading {
+      margin: 1rem;
+    }
+  }
+  
+  .button-85 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-85:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  /* styles.css */
+  
+  .custom-button {
+    display: inline-block;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    height: 34px;
+    padding: 0 13px;
+    color: #fff;
+    vertical-align: top;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    background: #cc4d29;
+    border-color: #cc4d29;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 16px;
+    font-size: 11px;
+    size: 5px;
+  }
+  
+  .custom-button:hover {
+    background: #e4461b;
+    border-color: #e4461b;
+  }
+  .custom-button.small {
+    height: 32px; /* Adjust the height for a small button */
+    padding: 0 10px; /* Adjust the padding for a small button */
+    font-size: 10px; /* Adjust the font size for a small button */
+  }
+  .btn-53,
+  .btn-53 *,
+  .btn-53 :after,
+  .btn-53 :before,
+  .btn-53:after,
+  .btn-53:before {
+    border: 0 solid;
+    box-sizing: border-box;
+  }
+  .btn-53 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: #000;
+    background-image: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+      Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 100%;
+    line-height: 1.5;
+    margin: 0;
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+    padding: 0;
+  }
+  .btn-53:disabled {
+    cursor: default;
+  }
+  .btn-53:-moz-focusring {
+    outline: auto;
+  }
+  .btn-53 svg {
+    display: block;
+    vertical-align: middle;
+  }
+  .btn-53 [hidden] {
+    display: none;
+  }
+  .btn-53 {
+    border: 1px solid;
+    border-radius: 999px;
+    box-sizing: border-box;
+    display: block;
+    font-weight: 900;
+    overflow: hidden;
+    padding: 1.2rem 3rem;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .btn-53 .original {
+    background: #fff;
+    color: #000;
+    display: grid;
+    inset: 0;
+    place-content: center;
+    position: absolute;
+    transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+  }
+  .btn-53:hover .original {
+    transform: translateY(100%);
+  }
+  .btn-53 .letters {
+    display: inline-flex;
+  }
+  .btn-53 span {
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+  }
+  .btn-53 span:nth-child(2n) {
+    transform: translateY(15px);
+  }
+  .btn-53:hover span {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .btn-53:hover span:nth-child(2) {
+    transition-delay: 0.1s;
+  }
+  .btn-53:hover span:nth-child(3) {
+    transition-delay: 0.2s;
+  }
+  .btn-53:hover span:nth-child(4) {
+    transition-delay: 0.3s;
+  }
+  .btn-53:hover span:nth-child(5) {
+    transition-delay: 0.4s;
+  }
+  .btn-53:hover span:nth-child(6) {
+    transition-delay: 0.5s;
+  }
+  
+  .bn30 {
+    border: 5em;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+    padding: 0.7em 2em;
+    border-radius: 65px;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+    -webkit-transition: box-shadow 0.25s;
+    transition: box-shadow 0.25s;
+    color: white;
+  }
+  
+  .bn30 .text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+  }
+  
+  .bn30:after {
+    content: "";
+    border-radius: 18px;
+    position: absolute;
+    margin: 4px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: #0e0e10;
+  }
+  
+  .bn30:hover {
+    background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+    box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+  }
+  
+  .bn30:hover .text {
+    background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+  }
+  /* styles.css */
+  
+  .custom-input {
+    box-shadow: inset #abacaf 0 0 0 2px;
+    border: 0;
+    background: rgba(0, 0, 0, 0);
+    appearance: none;
+    width: 100%;
+    position: relative;
+    border-radius: 3px;
+    padding: 9px 12px;
+    line-height: 1.4;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .gradient-text {
+    background: rgb(34,48,116);
+    background: radial-gradient(circle, rgba(34,48,116,1) 0%, rgba(101,29,43,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* You can adjust the gradient angle and colors as needed */
+  }
+.cd{
+    width:25vw;
+    height:23vh;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+   
+}
+.cd:hover{
+    transform: scale(1.1);
+}
+body {
+    background: "#384f3c";
+  }
+  .M{
+    font-family: Lato;
+  }
+
+.CContainer {
+    background-color: #88cd4c;
+opacity: 0.8;
+background-image:  linear-gradient(#444cf7 1px, transparent 1px), linear-gradient(to right, #444cf7 1px, #88cd4c 1px);
+background-size: 20px 20px;
+background-position: 0 0,10px 10px}
+  
+  
+.custom-notification-container {
+  position: fixed;
+  top: 0; /* Position it at the top of the screen */
+  right: 0;
+  width: 100%; /* Make it full-width */
+  max-width: 400px; /* Set a maximum width if desired */
+  margin: 0 auto; /* Center it horizontally */
+  z-index: 99999; /* Increase the z-index to ensure it's above the navbar */
+  animation: slide-in 0.5s ease-out; /* Add a slide-in animation */
+}
+
+/* Rest of your CSS styles... */
+
+/* CSS for Navbar (Assuming you have a class for the navbar) */
+.ddd {
+  z-index: 9999; /* Ensure the navbar has a lower z-index than the notification container */
+}
+
+
+
