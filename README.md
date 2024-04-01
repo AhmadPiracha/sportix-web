@@ -15,6 +15,3 @@ Equipment Availability Checks 🎾
 Online Bookings 📲
 Auction Participation 🤝
 Game Results and Schedule Updates 📅
-
-
-Supervised By : Ma'am Saba Naseem 
